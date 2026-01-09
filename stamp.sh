@@ -1,20 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Hard-wired repo (per your request)
 OWNER="ts"
 REPO="gr"
-
-# Branch Tampermonkey should pull from
 BRANCH="${1:-main}"
 
 RAW_BASE="https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}"
 
-# Monotonic version: commit count (always increases)
 COUNT="$(git rev-list --count HEAD 2>/dev/null || echo 0)"
 VERSION="0.0.${COUNT}"
 
-# Find all tracked userscripts dynamically (no filenames needed)
 FILES=()
 while IFS= read -r f; do
   FILES+=("$f")
@@ -26,43 +21,50 @@ if [[ ${#FILES[@]} -eq 0 ]]; then
 fi
 
 for f in "${FILES[@]}"; do
-  url="${RAW_BASE}/${f}"
+  # URL-encode spaces (critical)
+  ENCODED_PATH="${f// /%20}"
+  URL="${RAW_BASE}/${ENCODED_PATH}"
 
-  # Stamp only within the ==UserScript== block.
+  VERSION_ENV="$VERSION" URL_ENV="$URL" \
   perl -0777 -i -pe '
-    my ($ver, $u) = @ARGV;
+    my $ver = $ENV{VERSION_ENV};
+    my $url = $ENV{URL_ENV};
 
-    # Ensure header exists
-    if (!m{//\s*==UserScript==.*?//\s*==/UserScript==}s) {
-      die "Missing UserScript header (// ==UserScript== ... // ==/UserScript==)\n";
-    }
-
-    # Extract the header block
-    s{
-      (//\s*==UserScript==\s*\n)      # $1 start
-      (.*?)                           # $2 body
-      (//\s*==/UserScript==)          # $3 end
+    # Extract userscript header
+    if (!s{
+      (//\s*==UserScript==\s*\n)
+      (.*?)
+      (//\s*==/UserScript==)
     }{
       my ($start, $body, $end) = ($1, $2, $3);
 
-      # Helper: set or insert a directive line
-      my $set_line = sub {
-        my ($key, $val) = @_;
-        if ($body =~ s/^(\s*\/\/\s*\@$key\s+).*$/$1$val/m) {
-          # replaced
+      my %seen;
+
+      # Remove existing version/update/download lines
+      my @lines = grep {
+        if (/^\s*\/\/\s*\@(version|updateURL|downloadURL)\b/i) {
+          $seen{lc $1} = 1;
+          0;
         } else {
-          # insert near top (after start)
-          $body = "// \@$key      $val\n" . $body;
+          1;
         }
-      };
+      } split /\n/, $body;
 
-      $set_line->("version",     $ver);
-      $set_line->("updateURL",   $u);
-      $set_line->("downloadURL", $u);
+      # Build clean header body
+      my @new = (
+        "// \@version      $ver",
+        "// \@updateURL    $url",
+        "// \@downloadURL  $url",
+      );
 
-      $start . $body . $end
-    }gsex;
-  ' "$VERSION" "$url" "$f"
+      $start
+      . join("\n", @new, @lines)
+      . "\n"
+      . $end
+    }gsex) {
+      die "Missing or malformed UserScript header\n";
+    }
+  ' "$f"
 
   echo "Stamped: $f -> v${VERSION}"
 done

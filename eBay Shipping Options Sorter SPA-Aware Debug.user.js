@@ -1,9 +1,9 @@
 // ==UserScript==
-// @downloadURL      
-// @updateURL      
+// @version      0.0.2
+// @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Options%20Sorter%20SPA-Aware%20Debug.user.js
+// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Options%20Sorter%20SPA-Aware%20Debug.user.js
 // @name         eBay Shipping Options Sorter SPA-Aware Debug
 // @namespace    https://example.com/ebay-shipping-sorter
-// @version      
 // @description  Sort shipping options by price on eBay, sink excluded services below preferred ones, SPA-aware, pink for excluded
 // @match        *://www.ebay.com/ship/single*
 // @grant        none

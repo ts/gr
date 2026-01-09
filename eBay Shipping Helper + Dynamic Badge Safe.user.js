@@ -1,9 +1,9 @@
 // ==UserScript==
-// @downloadURL      
-// @updateURL      
+// @version      0.0.2
+// @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Helper%20+%20Dynamic%20Badge%20Safe.user.js
+// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Helper%20+%20Dynamic%20Badge%20Safe.user.js
 // @name         eBay Shipping Helper + Dynamic Badge Safe
 // @namespace    http://tampermonkey.net/
-// @version      
 // @description  Dynamic shipping badge + global keyboard shortcuts + shipping filter
 // @author       @tksb
 // @match        https://www.ebay.com/*

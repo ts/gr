@@ -1,9 +1,9 @@
 // ==UserScript==
-// @downloadURL      
-// @updateURL      
+// @version      0.0.2
+// @updateURL    https://raw.githubusercontent.com/ts/gr/main/Clone%20Service%20Label%20to%20Button%20Area.user.js
+// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/Clone%20Service%20Label%20to%20Button%20Area.user.js
 // @name         Clone Service Label to Button Area
 // @namespace    https://example.com/
-// @version      
 // @description  Clone label text from selected service row into a span near a button
 // @match        *://*/*
 // @grant        none
