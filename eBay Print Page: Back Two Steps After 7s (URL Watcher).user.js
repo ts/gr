@@ -6,7 +6,7 @@
 // @match        *://*.ebay.com/*
 // @run-at       document-start
 // @grant        none
-// @version      0.0.3
+// @version      0.0.4
 // @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Print%20Page:%20Back%20Two%20Steps%20After%207s%20(URL%20Watcher).user.js
 // @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Print%20Page:%20Back%20Two%20Steps%20After%207s%20(URL%20Watcher).user.js
 // ==/UserScript==

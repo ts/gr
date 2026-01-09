@@ -5,7 +5,7 @@
 // @author       You
 // @match        https://www.ebay.com/*
 // @grant        none
-// @version      0.0.3
+// @version      0.0.4
 // @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Fuzzy%20Filter.user.js
 // @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Fuzzy%20Filter.user.js
 // ==/UserScript==

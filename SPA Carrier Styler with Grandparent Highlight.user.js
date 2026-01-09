@@ -4,7 +4,7 @@
 // @description  Apply styles based on carrier and style "Purchase shipping label" links/buttons with grandparent background
 // @match        *://*/*
 // @grant        none
-// @version      0.0.3
+// @version      0.0.4
 // @updateURL    https://raw.githubusercontent.com/ts/gr/main/SPA%20Carrier%20Styler%20with%20Grandparent%20Highlight.user.js
 // @downloadURL  https://raw.githubusercontent.com/ts/gr/main/SPA%20Carrier%20Styler%20with%20Grandparent%20Highlight.user.js
 // ==/UserScript==

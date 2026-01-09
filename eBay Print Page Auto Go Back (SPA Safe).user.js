@@ -4,7 +4,7 @@
 // @description  Detects URL changes and goes back 2 steps when "print" appears
 // @match        https://www.ebay.com/*
 // @grant        none
-// @version      0.0.3
+// @version      0.0.4
 // @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Print%20Page%20Auto%20Go%20Back%20(SPA%20Safe).user.js
 // @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Print%20Page%20Auto%20Go%20Back%20(SPA%20Safe).user.js
 // ==/UserScript==
