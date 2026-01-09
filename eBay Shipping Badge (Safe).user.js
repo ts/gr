@@ -1,7 +1,9 @@
 // ==UserScript==
+// @downloadURL      
+// @updateURL      
 // @name         eBay Shipping Badge (Safe)
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      
 // @description  Dynamic shipping difference badge for eBay, safe version
 // @author       You
 // @match        https://www.ebay.com/*

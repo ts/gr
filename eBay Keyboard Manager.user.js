@@ -1,7 +1,9 @@
 // ==UserScript==
+// @downloadURL      
+// @updateURL      
 // @name         eBay Keyboard Manager
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      
 // @description  Central keyboard manager for eBay userscripts. Allows multiple scripts to register shortcuts safely.
 // @match        *://*.ebay.com/*
 // @grant        none

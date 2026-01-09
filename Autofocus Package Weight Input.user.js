@@ -1,4 +1,7 @@
 // ==UserScript==
+// @downloadURL      
+// @updateURL      
+// @version      
 // @name         Autofocus Package Weight Input
 // @match        https://www.ebay.com/*
 // @grant        none

@@ -1,7 +1,9 @@
 // ==UserScript==
+// @downloadURL      
+// @updateURL      
 // @name         eBay Print Page Auto Go Back (SPA Safe)
 // @namespace    https://example.com/ebay-auto-back
-// @version      1.4
+// @version      
 // @description  Detects URL changes and goes back 2 steps when "print" appears
 // @match        https://www.ebay.com/*
 // @grant        none

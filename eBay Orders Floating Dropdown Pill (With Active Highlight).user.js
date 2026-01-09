@@ -1,7 +1,9 @@
 // ==UserScript==
+// @downloadURL      
+// @updateURL      
 // @name         eBay Orders Floating Dropdown Pill (With Active Highlight)
 // @namespace    https://example.com/ebay-floating-dropdown-pill
-// @version      1.2
+// @version      
 // @description  Floating pill with dropdown for eBay Orders SPA, highlights selected option
 // @match        *://www.ebay.com/sh/ord*
 // @grant        none

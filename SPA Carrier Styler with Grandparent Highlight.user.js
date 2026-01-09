@@ -1,7 +1,9 @@
 // ==UserScript==
+// @downloadURL      
+// @updateURL      
 // @name         SPA Carrier Styler with Grandparent Highlight
 // @namespace    https://example.com/carrier-styler-grandparent
-// @version      1.5
+// @version      
 // @description  Apply styles based on carrier and style "Purchase shipping label" links/buttons with grandparent background
 // @match        *://*/*
 // @grant        none

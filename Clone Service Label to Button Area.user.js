@@ -1,7 +1,9 @@
 // ==UserScript==
+// @downloadURL      
+// @updateURL      
 // @name         Clone Service Label to Button Area
 // @namespace    https://example.com/
-// @version      1.0
+// @version      
 // @description  Clone label text from selected service row into a span near a button
 // @match        *://*/*
 // @grant        none

@@ -1,8 +1,10 @@
 
 // ==UserScript==
+// @downloadURL      
+// @updateURL      
 // @name         eBay Print Page: Back Two Steps After 7s (URL Watcher)
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      
 // @description  Start a 7s timer to go back two steps only when the URL becomes the eBay shipping print page.
 // @match        *://*.ebay.com/*
 // @run-at       document-start

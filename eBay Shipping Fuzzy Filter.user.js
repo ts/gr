@@ -1,7 +1,9 @@
 // ==UserScript==
+// @downloadURL      
+// @updateURL      
 // @name         eBay Shipping Fuzzy Filter
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      
 // @description  Fuzzy filter for eBay shipping options (standalone)
 // @author       You
 // @match        https://www.ebay.com/*

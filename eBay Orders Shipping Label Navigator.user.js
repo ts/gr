@@ -1,7 +1,9 @@
 // ==UserScript==
+// @downloadURL      
+// @updateURL      
 // @name         eBay Orders Shipping Label Navigator
 // @namespace    https://example.com/ebay-shipping-keyboard
-// @version      1.1
+// @version      
 // @description  Navigate eBay Orders table with arrow keys and enter to open Get shipping label
 // @match        *://www.ebay.com/sh/ord*
 // @grant        none
