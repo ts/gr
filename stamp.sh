@@ -15,9 +15,16 @@ while IFS= read -r f; do
   FILES+=("$f")
 done < <(git ls-files '*.user.js')
 
-if [[ ${#FILES[@]} -eq 0 ]]; then
-  echo "No *.user.js files tracked by git."
-  exit 0
+# If filenames were passed in (from the hook), stamp only those.
+# Otherwise fall back to all tracked *.user.js.
+FILES=()
+if [[ $# -gt 1 ]]; then
+  shift # remove BRANCH arg
+  FILES=("$@")
+else
+  while IFS= read -r f; do
+    FILES+=("$f")
+  done < <(git ls-files '*.user.js')
 fi
 
 for f in "${FILES[@]}"; do
