@@ -1,12 +1,12 @@
 // ==UserScript==
-// @version      0.0.2
-// @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Orders%20Floating%20Dropdown%20Pill%20(With%20Active%20Highlight).user.js
-// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Orders%20Floating%20Dropdown%20Pill%20(With%20Active%20Highlight).user.js
 // @name         eBay Orders Floating Dropdown Pill (With Active Highlight)
 // @namespace    https://example.com/ebay-floating-dropdown-pill
 // @description  Floating pill with dropdown for eBay Orders SPA, highlights selected option
 // @match        *://www.ebay.com/sh/ord*
 // @grant        none
+// @version      0.0.3
+// @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Orders%20Floating%20Dropdown%20Pill%20(With%20Active%20Highlight).user.js
+// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Orders%20Floating%20Dropdown%20Pill%20(With%20Active%20Highlight).user.js
 // ==/UserScript==
 
 (function() {

@@ -1,12 +1,12 @@
 // ==UserScript==
-// @version      0.0.2
-// @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Orders%20Shipping%20Label%20Navigator.user.js
-// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Orders%20Shipping%20Label%20Navigator.user.js
 // @name         eBay Orders Shipping Label Navigator
 // @namespace    https://example.com/ebay-shipping-keyboard
 // @description  Navigate eBay Orders table with arrow keys and enter to open Get shipping label
 // @match        *://www.ebay.com/sh/ord*
 // @grant        none
+// @version      0.0.3
+// @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Orders%20Shipping%20Label%20Navigator.user.js
+// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Orders%20Shipping%20Label%20Navigator.user.js
 // ==/UserScript==
 
 (function() {

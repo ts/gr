@@ -58,7 +58,7 @@ for f in "${FILES[@]}"; do
       );
 
       $start
-      . join("\n", @new, @lines)
+      . join("\n", @lines, @new)
       . "\n"
       . $end
     }gsex) {

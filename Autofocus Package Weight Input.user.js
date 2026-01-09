@@ -1,10 +1,10 @@
 // ==UserScript==
-// @version      0.0.2
-// @updateURL    https://raw.githubusercontent.com/ts/gr/main/Autofocus%20Package%20Weight%20Input.user.js
-// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/Autofocus%20Package%20Weight%20Input.user.js
 // @name         Autofocus Package Weight Input
 // @match        https://www.ebay.com/*
 // @grant        none
+// @version      0.0.3
+// @updateURL    https://raw.githubusercontent.com/ts/gr/main/Autofocus%20Package%20Weight%20Input.user.js
+// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/Autofocus%20Package%20Weight%20Input.user.js
 // ==/UserScript==
 
 (() => {

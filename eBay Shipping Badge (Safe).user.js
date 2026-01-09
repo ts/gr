@@ -1,13 +1,13 @@
 // ==UserScript==
-// @version      0.0.2
-// @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Badge%20(Safe).user.js
-// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Badge%20(Safe).user.js
 // @name         eBay Shipping Badge (Safe)
 // @namespace    http://tampermonkey.net/
 // @description  Dynamic shipping difference badge for eBay, safe version
 // @author       You
 // @match        https://www.ebay.com/*
 // @grant        none
+// @version      0.0.3
+// @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Badge%20(Safe).user.js
+// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Badge%20(Safe).user.js
 // ==/UserScript==
 
 (function () {

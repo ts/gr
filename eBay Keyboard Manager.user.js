@@ -1,12 +1,12 @@
 // ==UserScript==
-// @version      0.0.2
-// @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Keyboard%20Manager.user.js
-// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Keyboard%20Manager.user.js
 // @name         eBay Keyboard Manager
 // @namespace    http://tampermonkey.net/
 // @description  Central keyboard manager for eBay userscripts. Allows multiple scripts to register shortcuts safely.
 // @match        *://*.ebay.com/*
 // @grant        none
+// @version      0.0.3
+// @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Keyboard%20Manager.user.js
+// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Keyboard%20Manager.user.js
 // ==/UserScript==
 
 (function() {

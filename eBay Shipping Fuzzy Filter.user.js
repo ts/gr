@@ -1,13 +1,13 @@
 // ==UserScript==
-// @version      0.0.2
-// @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Fuzzy%20Filter.user.js
-// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Fuzzy%20Filter.user.js
 // @name         eBay Shipping Fuzzy Filter
 // @namespace    http://tampermonkey.net/
 // @description  Fuzzy filter for eBay shipping options (standalone)
 // @author       You
 // @match        https://www.ebay.com/*
 // @grant        none
+// @version      0.0.3
+// @updateURL    https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Fuzzy%20Filter.user.js
+// @downloadURL  https://raw.githubusercontent.com/ts/gr/main/eBay%20Shipping%20Fuzzy%20Filter.user.js
 // ==/UserScript==
 
 (function() {
